@@ -5,9 +5,6 @@ Uso:
     python main.py
     python main.py --paciente-id 10002 --pergunta "..."
 
-Sem argumentos, roda o mesmo caso de exemplo do script original
-(TechChallenge.py), preservando o comportamento historico para quem
-ja usava o projeto assim.
 """
 
 from __future__ import annotations
