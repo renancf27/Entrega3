@@ -76,7 +76,7 @@ assistente-medico/
 │   ├── data_raw/
 │   │   ├── val.parquet              # HealthCareMagic (validation split, real)
 │   │   ├── test.parquet             # HealthCareMagic (test split, real)
-│   │   └── COLOQUE_TRAIN_PARQUET_AQUI.txt  # onde colocar o train.parquet (grande, enviado à parte)
+│   │   └── train.parquet            # HealthCareMagic (train split, real)
 │   ├── data_processed/
 │   │   ├── val_sample.jsonl         # amostra do processamento real (20 registros)
 │   │   └── test_sample.jsonl        # amostra do processamento real (20 registros)
