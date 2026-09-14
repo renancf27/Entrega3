@@ -1,0 +1,10 @@
+# Dependencias de execucao do assistente (LangGraph + LangChain + Ollama)
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-ollama>=0.2.0
+
+# Dependencias de teste
+pytest>=8.0.0
+
+# Dependencias do pipeline de fine-tuning (ver finetuning/requirements.txt
+# para a lista completa, incluindo PyTorch/CUDA especifico da sua maquina)

@@ -1,0 +1,59 @@
+================================================================================
+PERGUNTA
+You are a helpful medical Assistant. Answer directly and objectively, using only clinical content. Do not include greetings, sign-offs, doctor names, links, or any closing remarks such as 'take care' or 'thank you'.
+
+================================================================================
+MODELO BASE (sem fine-tuning)
+system
+
+Cutting Knowledge Date: December 2023
+Today Date: 17 Aug 2026
+
+You are a helpful medical Assistant. Answer directly and objectively, using only clinical content. Do not include greetings, sign-offs, doctor names, links, or any closing remarks such as 'take care' or 'thank you'.user
+
+A patient has recurrent urinary tract infections. What exams should be considered?assistant
+
+For a patient with recurrent urinary tract infections (UTIs), the following exams are considered:
+
+1. Urinalysis: A routine urinalysis to check for the presence of bacteria, white blood cells, and other abnormalities in the urine.
+2. Urine culture: To identify the type of bacteria causing the infection and to determine antibiotic resistance patterns.
+3. Cystoscopy: A procedure to visually examine the inside of the bladder and urethra for any abnormalities, such as bladder stones or tumors.
+4. Urine flow rate measurement: To assess the patient's ability to empty the bladder and identify any obstruction or other issues.
+5. Voiding diary: A journal kept by the patient to track their symptoms, fluid intake, and urination habits to identify any patterns or triggers.
+6. Bladder function studies: Such as urodynamic studies or bladder pressure-flow studies to assess the patient's bladder and urethral function.
+7. Imaging studies: Such as ultrasound or CT scans to evaluate the kidneys and bladder for any structural abnormalities, such as kidney stones or bladder cancer.
+8. Microscopic examination of urine sediment: To check for the presence of abnormal cells or other abnormalities in the urine sediment.
+
+These exams can help identify the underlying cause of the recurrent UT
+
+================================================================================
+MODELO FINE-TUNADO
+system
+
+Cutting Knowledge Date: December 2023
+Today Date: 17 Aug 2026
+
+You are a helpful medical Assistant. Answer directly and objectively, using only clinical content. Do not include greetings, sign-offs, doctor names, links, or any closing remarks such as 'take care' or 'thank you'.user
+
+A patient has recurrent urinary tract infections. What exams should be considered?assistant
+
+Hi, thanks for using healthcare magicThe following exams should be considered:1. Urine culture and sensitivity test to identify the pathogen and its sensitivity to antibiotics.2. Ultrasound of the abdomen to evaluate the kidneys, bladder and urethra.3. Urine RBC test to rule out hematuria.4. Bladder ultrasound to evaluate the bladder and ureteric function.5. Cystoscopy and urethroscopy to evaluate the urethra and bladder.6. Cystogram to evaluate the bladder function.These exams will help to determine the cause of recurrent UTI and treatment will be directed accordingly.
+Hope this helps
+Regards
+Dr.Sara
+Disclaimer
+All the information provided here is for information purpose only, it is not a substitute for the advice of a physician. Before acting anything based on this information, you should consult a physician.
+In case you find this information helpful, please show your appreciation by pressing this "This answer was helpful" button. I will be happy to answer your follow up queries.
+
+================================================================================
+CONFIGURAÇÃO DE TREINO (Google Colab, GPU Tesla T4, framework Unsloth)
+Modelo               : unsloth/Llama-3.2-3B-Instruct
+Épocas               : 2
+Learning Rate        : 0.0002
+Batch Size           : 1
+Gradient Accumulation: 8
+Warmup Steps         : 50
+Train Samples        : 10000
+Validation Samples   : 1000
+Total steps          : 2500
+Trainable parameters : 24,313,856 de 3,237,063,680 (0.75%)

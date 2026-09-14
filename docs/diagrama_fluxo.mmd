@@ -1,0 +1,32 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	consultar_prontuario(consultar_prontuario)
+	montar_system_prompt(montar_system_prompt)
+	verificar_urgencia(verificar_urgencia)
+	alertar_equipe(alertar_equipe)
+	verificar_exames_pendentes(verificar_exames_pendentes)
+	gerar_resposta(gerar_resposta)
+	validar_resposta(validar_resposta)
+	adicionar_explicabilidade(adicionar_explicabilidade)
+	registrar_auditoria(registrar_auditoria)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> consultar_prontuario;
+	adicionar_explicabilidade --> registrar_auditoria;
+	alertar_equipe --> registrar_auditoria;
+	consultar_prontuario --> montar_system_prompt;
+	gerar_resposta --> validar_resposta;
+	montar_system_prompt --> verificar_urgencia;
+	validar_resposta --> adicionar_explicabilidade;
+	verificar_exames_pendentes --> gerar_resposta;
+	verificar_urgencia -.-> alertar_equipe;
+	verificar_urgencia -.-> verificar_exames_pendentes;
+	registrar_auditoria --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+
