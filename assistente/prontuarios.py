@@ -1,12 +1,4 @@
 """Acesso a base de dados estruturada de prontuarios.
-
-No desafio, este e o componente de "consultas em base de dados
-estruturadas (como prontuarios e registros)" que o LangChain/LangGraph
-deve orquestrar. Aqui a base e um arquivo JSON simples (data/prontuarios.json)
-para fins didaticos; em um ambiente real este modulo e o unico lugar
-que precisaria mudar para apontar para um banco relacional, um
-data warehouse ou um sistema de prontuario eletronico (EHR) via API,
-sem tocar no restante do pipeline.
 """
 
 from __future__ import annotations

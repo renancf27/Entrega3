@@ -1,15 +1,4 @@
 """Logging estruturado para rastreamento e auditoria.
-
-Requisito do desafio: "Implementar logging detalhado para
-rastreamento e auditoria". Cada interacao gera um registro em JSON
-Lines (um objeto JSON por linha) contendo um id unico, timestamp UTC,
-os dados de entrada, a pergunta, a resposta final e os sinais de
-alerta/roteamento que foram acionados.
-
-JSON Lines foi escolhido (em vez de um unico array JSON) porque
-permite apender novos registros sem reler e reescrever o arquivo
-inteiro, o que importa a partir do momento em que o volume de
-interacoes cresce.
 """
 
 from __future__ import annotations

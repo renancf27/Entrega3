@@ -2,12 +2,10 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-auditoria.json
 modelo_gguf/
 *.gguf
 .env
 
-finetuning/data_raw/*.parquet
 finetuning/data_processed/train.jsonl
 finetuning/data_processed/val.jsonl
 finetuning/data_processed/test.jsonl

@@ -1,15 +1,4 @@
 """Geracao da secao de explicabilidade (explainability) da resposta.
-
-Requisito do desafio: "Garantir explainability das respostas da LLM
-(exemplo: indicar a fonte da informacao utilizada na resposta)".
-
-A implementacao cobre isso de duas formas:
-
-1. Atribuicao de dados: lista explicitamente quais campos do
-   prontuario/contexto do paciente foram usados para gerar a resposta.
-2. Transparencia de modelo: identifica que a resposta foi gerada por
-   um modelo de IA (nome/versao configurados em config.ROTULO_MODELO),
-   deixando claro que ele nao substitui o julgamento clinico humano.
 """
 
 from __future__ import annotations

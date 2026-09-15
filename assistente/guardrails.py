@@ -1,21 +1,4 @@
 """Guardrails de saida: limpeza e validacao da resposta do LLM.
-
-Este modulo implementa o requisito de "Seguranca e validacao" do
-desafio: o assistente nunca deve enviar ao usuario final saudacoes,
-assinaturas de medico, links externos ou disclaimers inconsistentes
-gerados livremente pelo modelo. Em vez disso, a secao padronizada de
-explicabilidade (ver explainability.py) e quem carrega a informacao
-de transparencia e a instrucao de validacao humana, de forma
-controlada e auditavel.
-
-Atencao de design (documentada tambem no relatorio tecnico): como o
-padrao de "gatilho de fechamento" corta a resposta a partir do
-primeiro sinal de saudacao/assinatura/disclaimer, ele tambem removeria
-um disclaimer de seguranca que o proprio modelo eventualmente gerasse
-espontaneamente. Isso e intencional aqui porque a mensagem de
-seguranca padrao e sempre reanexada por adicionar_explicabilidade,
-mas se esse guardrail for reaproveitado em outro contexto sem essa
-segunda camada, revise esse comportamento.
 """
 
 from __future__ import annotations
